@@ -8,6 +8,8 @@ linking. Shared by the Koove SDK, CLI and control plane.
 zero-knowledge model.** The construction here is exactly what encrypts your secrets, so
 anyone can verify that the server never has what it needs to read them.
 
+> 🔒 **Public threat model:** [SECURITY-MODEL.md](./SECURITY-MODEL.md) — what Koove guarantees, how, and what it does not.
+
 ## What it does
 
 - **Envelope encryption.** Each secret is encrypted once with a random Data Encryption
