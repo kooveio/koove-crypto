@@ -97,9 +97,12 @@ normal TLS rather than bricking.
 - **iOS App Attest: verified end-to-end on physical hardware** (real
   attestation, chain to Apple's pinned root, biometric-gated decryption, no dev
   bypass), including the negative case: a non-recipient device cannot decrypt.
-- **Android Play Integrity: implemented and unit-tested; live hardware run
-  pending** Play Console setup. We label it exactly that everywhere — never
-  "works on both".
+- **Android Play Integrity: verified end-to-end on physical hardware** (real
+  `MEETS_DEVICE_INTEGRITY` verdict decoded server-side via Google's official
+  endpoint, biometric-gated decryption, no dev bypass), including the same
+  negative case. Remaining nuance we state honestly: dev builds installed by
+  cable are `UNRECOGNIZED_VERSION` (only Play-served builds get
+  `PLAY_RECOGNIZED`); production servers require `PLAY_RECOGNIZED`.
 - **Supply chain:** npm packages are published via OIDC trusted publishing with
   **SLSA provenance attestations**, and run **no install-time scripts**.
 - **Independent cryptographic audit:** on the roadmap (target H2 2026); the
