@@ -1,8 +1,14 @@
 {
   "name": "@koove/crypto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Koove zero-knowledge envelope encryption primitives (X25519 + AES-256-GCM + HKDF). Pure JS, auditable, shared by the SDK, CLI and control plane.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kooveio/koove-crypto.git"
+  },
+  "homepage": "https://koove.io",
+  "bugs": "https://github.com/kooveio/koove-crypto/issues",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
